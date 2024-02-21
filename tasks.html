@@ -1,27 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>task</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 id="h1">task</h1>
-    <hr id="hr">
-    <div id="container">
-        <div id="task_container">
-            <ul id="tasklist"></ul>
-        </div>
-
-</div>
-<br>
-<br>
-
-<form id="taskform">
-                <input id="tasks" placeholder="New Task" type="text">
-                <input id="submit" type="submit">
+<html>
+    <html lang="en">
+    <head>
+        <title>Tasks</title>
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div class="container">
+            <h1>Tasks</h1>
+            
+            <form id="taskForm">
+              <input type="text" id="taskInput" placeholder="Enter Task">
+              <button type="submit" id="submitButton" disabled>Submit</button>
             </form>
-            <script src="tasks.js"></script>
-        </body>
+          
+            <ul id="taskList">
+              <!-- Task items will be added here dynamically -->
+            </ul>
+            
+            <div id="submittedTasks">
+              <!-- Submitted tasks will be displayed here -->
+            </div>
+          </div>
+          
+          <script src="tasks.js"></script>
+    </body>
+
 </html>
